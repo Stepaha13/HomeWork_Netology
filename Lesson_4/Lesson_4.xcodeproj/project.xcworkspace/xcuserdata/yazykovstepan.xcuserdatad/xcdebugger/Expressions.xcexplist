@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "task2():main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "str2 &lt; str1">
+            </PersistentString>
+            <PersistentString
+               value = "str[1]">
+            </PersistentString>
+            <PersistentString
+               value = "str2.compare(str1)">
+            </PersistentString>
+            <PersistentString
+               value = "str2[0]">
+            </PersistentString>
+            <PersistentString
+               value = "str2[0] &lt; str1[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "main:main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "arr_address[1]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "sort(address*, int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "str2.compare(str1) &gt; 0">
+            </PersistentString>
+            <PersistentString
+               value = "str2.compare(str1)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
