@@ -81,9 +81,9 @@ void task1(){
 	outFile << count_address;
 	outFile << "\n";
 	
-	for (int i = 0; i < count_address; i++) {
+	for (int i = count_address - 1; i >= 0; i--) {
 		outFile << arr_addresses[i].out();
-		bool res = true;
+		res = true;
 	}
 	
 	if (res){
@@ -125,7 +125,7 @@ void task2(){
 	
 	for (int i = 0; i < count_address; i++) {
 		outFile << arr_addresses[i].out();
-		bool res = true;
+		res = true;
 	}
 	
 	if (res){
@@ -157,7 +157,7 @@ void sort(address *arr_addresses, int size){
 	bool swap = false;
 	do {
 		swap = false;
-		for (int i = 1; i < size - 1; i++) {
+		for (int i = 1; i < size; i++) {
 			std::string str1 = arr_addresses[i].get_sity();
 			std::string str2 = arr_addresses[i - 1].get_sity();
 			
@@ -165,7 +165,7 @@ void sort(address *arr_addresses, int size){
 				address buffer = arr_addresses[i - 1];
 				arr_addresses[i - 1] = arr_addresses[i];
 				arr_addresses[i] = buffer;
-				bool swap = true;
+				swap = true;
 			}
 		}
 	} while (swap);
