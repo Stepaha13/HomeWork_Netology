@@ -360,28 +360,35 @@ void task2(){
 	std::cout << tr.print_info() << "\n" << std::endl;
 	
 	rectangular rec {10, 20, 30, 50, 60};
-	std::cout << rec.print_info() << "\n" << std::endl;
+	triangle *tr_rec = &rec;
+	std::cout << tr_rec->print_info() << "\n" << std::endl;
 	
 	isosceles iso {10, 20, 50, 60};
-	std::cout << iso.print_info() << "\n" << std::endl;
+	triangle *tr_iso = &iso;
+	std::cout << tr_iso->print_info() << "\n" << std::endl;
 	
-	equilateral eqo {30};
-	std::cout << eqo.print_info() << "\n" << std::endl;
+	equilateral equ {30};
+	triangle *tr_equ = &equ;
+	std::cout << tr_equ->print_info() << "\n" << std::endl;
 	
 	quadrangle qua {10, 20, 30, 40, 50, 60, 70, 80};
 	std::cout << qua.print_info() << "\n" << std::endl;
 	
 	rectangle rectan {10, 20};
-	std::cout << rectan.print_info() << "\n" << std::endl;
+	quadrangle *qua_rectan = &rectan;
+	std::cout << qua_rectan->print_info() << "\n" << std::endl;
 	
 	box b {20};
-	std::cout << b.print_info() << "\n" << std::endl;
+	quadrangle *qua_b = &b;
+	std::cout << qua_b->print_info() << "\n" << std::endl;
 	
 	parallelogram par {20, 30, 30, 40};
-	std::cout << par.print_info() << "\n" << std::endl;
+	quadrangle *qua_par = &par;
+	std::cout << qua_par->print_info() << "\n" << std::endl;
 	
 	rhomb rh {30, 30, 40};
-	std::cout << rh.print_info() << "\n" << std::endl;
+	quadrangle *qua_rh = &rh;
+	std::cout << qua_rh->print_info() << "\n" << std::endl;
 
 }
 
@@ -391,36 +398,47 @@ void task3(){
 	fig.printInfoTask3();
 	
 	triangle tr {10, 20, 30, 50, 60, 70};
-	tr.printInfoTask3();
+	figure *fig_tr = &tr;
+	fig_tr->printInfoTask3();
 	
 	rectangular rec1 {10, 20, 30, 50, 60};
-	rec1.printInfoTask3();
+	figure *fig_rec1 = &rec1;
+	fig_rec1->printInfoTask3();
 	
 	rectangular rec2 {10, 20, 30, 30, 60};
-	rec2.printInfoTask3();
+	figure *fig_rec2 = &rec2;
+	fig_rec2->printInfoTask3();
 	
 	isosceles iso1 {10, 20, 10, 50, 60, 50};
-	iso1.print_info();
+	figure *fig_iso1 = &iso1;
+	fig_iso1->printInfoTask3();
 	
 	isosceles iso2 {10, 20, 30, 50, 60, 70};
-	iso2.print_info();
+	figure *fig_iso2 = &iso2;
+	fig_iso2->printInfoTask3();
 	
 	equilateral eqo {30, 30, 30, 60, 60, 60};
-	eqo.printInfoTask3();
+	figure *fig_eqo = &eqo;
+	fig_eqo->printInfoTask3();
 	
 	quadrangle qua {10, 20, 30, 40, 50, 60, 70, 80};
-	qua.print_info();
+	figure *fig_qua = &qua;
+	fig_qua->printInfoTask3();
 	
 	rectangle rectan {10, 20, 10, 20, 90, 90, 90, 90};
-	rectan.printInfoTask3();
+	figure *fig_rectan = &rectan;
+	fig_rectan->printInfoTask3();
 	
 	box b {20, 20, 20, 20, 90, 90, 90, 90};
-	b.printInfoTask3();
+	figure *fig_b = &b;
+	fig_b->printInfoTask3();
 	
 	parallelogram par {20, 30, 20, 30, 30, 40, 30, 40};
-	par.printInfoTask3();
+	figure *fig_par = &par;
+	fig_par->printInfoTask3();
 	
 	rhomb rh {30, 30, 30, 30, 30, 40, 30, 40};
-	rh.printInfoTask3();
+	figure *fig_rh = &rh;
+	fig_rh->printInfoTask3();
 	
 }
