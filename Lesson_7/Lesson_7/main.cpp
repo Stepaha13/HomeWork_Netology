@@ -9,8 +9,11 @@
 
 #define MODE 1
 
-#define SUB(a, b) ((a) - (b))
+#ifndef MODE
+#error Important macro required MODE
+#endif
 
+#define SUB(a, b) ((a) - (b))
 
 #if MODE == 1
 int add(int a, int b);
@@ -50,11 +53,6 @@ int main(int argc, const char * argv[]) {
 }
 
 void task1(){
-	
-#ifndef MODE
-	std::cout << "Необходимо определить MODE" << std::endl;
-	return;
-#endif
 	
 #if MODE == 0
 	std::cout << "Работаю в режиме тренировки" << std::endl;
